@@ -7,7 +7,13 @@ from datetime import datetime
 import os
 
 EXCEL_PATH = r"C:\Users\ASYAKKA\Mercedes-Benz (corpdir.onmicrosoft.com)\DWT_UTeam Werk 10 - General\08_Rotation UTeam\Projekt_UTeam_Digitalisierung\Masterliste_UTeam.xlsx"
-OUTPUT_DIR  = r"C:\Users\ASYAKKA\Mercedes-Benz (corpdir.onmicrosoft.com)\DWT_UTeam Werk 10 - General\Vorstellung_Asya_Test"
+
+
+# Statt des OneDrive‑Pfads:
+# OUTPUT_DIR = r"C:\Users\ASYAKKA\...\Vorstellung_Asya_Test"
+# Nimm stattdessen:
+OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "Vorstellung_Asya_Test")
+
 
 # Seiten‑Navigation
 st.sidebar.title("UTeam Rotations-Tool")
